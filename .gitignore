@@ -1,0 +1,39 @@
+# Python
+*.pyc
+__pycache__/
+env.py
+# Django
+db.sqlite3
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+
+# Media/uploads (optional if dynamically generated or sensitive)
+media/
+uploads/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# VS Code / PyCharm IDE config files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.*
+
+# Mac-specific
+.DS_Store
+
+# Node (optional, if you're using JavaScript tools)
+node_modules/
+
+# Migrations (optional: keep if working with teams)
+# **Some teams ignore these, but it’s common to commit them**
+# **Uncomment below if you choose to ignore migrations**
+# */migrations/
+# !*/migrations/__init__.py
