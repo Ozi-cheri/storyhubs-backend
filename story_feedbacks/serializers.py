@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import StoryFeedback
-from likes.models import Likes
+from likes.models import Like
 
 
 class StoryFeedbackSerializer(serializers.ModelSerializer):

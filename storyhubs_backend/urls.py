@@ -19,8 +19,11 @@ from .views import root_route
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api-auth/', include('rest_framework.urls')),
+    
     path('', root_route),
     path('', include('profiles.urls')),
     path('', include('story_feedbacks.urls')),
     path('', include('followers.urls')),
+    path('', include('likes.urls')),
 ]
