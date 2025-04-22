@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', root_route),
     path('', include('profiles.urls')),
+    path('', include('story_feedbacks.urls')),
+    path('', include('followers.urls')),
 ]

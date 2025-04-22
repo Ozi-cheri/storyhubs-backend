@@ -33,7 +33,7 @@ class ProfileList(generics.ListAPIView):
 class ProfileDetail(generics.RetrieveUpdateAPIView):
     permission_classes = [IsOwnerOrReadOnly]
     queryset = Profile.objects.annotate(
-        story_feedbacks_count=Count('owner__storyfeedbacks', distinct=True),
+        story_feedbacks_count=Count('owner__storyfeedback', distinct=True),
         followers_count=Count('owner__followed', distinct=True),
         following_count=Count('owner__following', distinct=True)
     ).order_by('-created_at')
