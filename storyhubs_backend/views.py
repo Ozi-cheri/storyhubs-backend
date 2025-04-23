@@ -6,3 +6,7 @@ def root_route(request):
     return Response({
         "message": "Welcome to Storyhubs Api!"
     })
+
+@api_view(['POST'])
+def logout_route(request):
+    return Response({"message": "You have successfully logged out."})
